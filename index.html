@@ -5,14 +5,14 @@
 		<title>acessa e pede checkout</title>
 	</head>
 
-	<body>
+	<body ng-app="acessaepedeApp" ng-controller="AcessaepedeCtrl">
 		<table>
-			<tr>
+			<tr ng-repeat="product in products">
                 <td>
-                    Título do Produto
+                    {{product.title}}
                 </td>
                 <td>
-                    R$ 100
+                    R$ {{product.price}}
                 </td>
                 <td>
                     <button>Adicionar ao carrinho</button>
@@ -47,5 +47,9 @@
                 background: #fff;
             }
         </style>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.0/angular.min.js"></script>
+		<script src="http://pineconellc.github.io/angular-foundation/mm-foundation-tpls-0.3.1.js"></script>
+
+		<script src="scripts.js"></script>
 	</body>
 </html>
