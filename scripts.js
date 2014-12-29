@@ -6,6 +6,15 @@ angular.module('acessaepedeApp', ['mm.foundation'])
         $scope.products = response.products;
     });
     $scope.addToCart = function (product) {
-        $scope.cart.push(angular.extend({quantity: 1}, product));
+        var found = false;
+        $scope.cart.forEach(function (item) {
+            if (item.id === product.id) {
+                item.quantity++;
+                found = true;
+            }
+        });
+        if (!found) {
+            $scope.cart.push(angular.extend({quantity: 1}, product));
+        }
     };
 })
