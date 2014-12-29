@@ -5,4 +5,7 @@ angular.module('acessaepedeApp', ['mm.foundation'])
     $http.get('products.json').success(function (response) {
         $scope.products = response.products;
     });
+    $scope.addToCart = function (product) {
+        $scope.cart.push(angular.extend({quantity: 1}, product));
+    };
 })

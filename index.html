@@ -15,21 +15,21 @@
                     R$ {{product.price}}
                 </td>
                 <td>
-                    <button>Adicionar ao carrinho</button>
+                    <button ng-click="addToCart(product);">Adicionar ao carrinho</button>
                 </td>
 			</tr>
 		</table>
 		<div class="ticket">
-			<table>
-			    <tr>
+			<table ng-if="cart.length">
+			    <tr ng-repeat="product in cart">
 			        <td>
-			            Título do Produto
+			            {{product.title}}
 			            <span>
-                            x3
+                            x{{product.quantity}}
                         </span>
 			        </td>
 			        <td>
-			            R$ 100
+			            R$ {{product.price}}
 			        </td>
 			    </tr>
 			</table>
