@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>acessa e pede checkout</title>
+	</head>
+
+	<body>
+		<table>
+			<tr>
+                <td>
+                    Título do Produto
+                </td>
+                <td>
+                    R$ 100
+                </td>
+                <td>
+                    <button>Adicionar ao carrinho</button>
+                </td>
+			</tr>
+		</table>
+		<div class="ticket">
+			<table>
+			    <tr>
+			        <td>
+			            Título do Produto
+			            <span>
+                            x3
+                        </span>
+			        </td>
+			        <td>
+			            R$ 100
+			        </td>
+			    </tr>
+			</table>
+			<h2>Total: R$ 100</h2>
+			<button>Checkout</button>
+		</div>
+		
+		<style>
+            .ticket{
+                position: fixed;
+                right: 0;
+                top: 0;
+                width: 300px;
+                height: 100%;
+                background: #fff;
+            }
+        </style>
+	</body>
+</html>
