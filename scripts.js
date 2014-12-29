@@ -19,11 +19,18 @@ angular.module('acessaepedeApp', ['mm.foundation'])
         }
     };
     $scope.getCartPrice = function () {
-        var getValue = parseInt($('#deliveryPrice').val());
-        var total = getValue;
+        var deliveryPrice = parseInt($('#deliveryPrice').val());
+        var total = deliveryPrice;
         $scope.cart.forEach(function (product) {
             total += product.price * product.quantity;
         });
         return total;
+    };
+    $scope.removeFromCart = function (product, cart) {
+        $scope.cart.forEach(function (item) {
+            if (item.id === product.id) {
+                cart.splice(cart.indexOf(item), 1);
+            }
+        });
     };
 })
