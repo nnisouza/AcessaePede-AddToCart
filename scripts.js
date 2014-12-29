@@ -17,4 +17,11 @@ angular.module('acessaepedeApp', ['mm.foundation'])
             $scope.cart.push(angular.extend({quantity: 1}, product));
         }
     };
+    $scope.getCartPrice = function () {
+        var total = 0;
+        $scope.cart.forEach(function (product) {
+            total += product.price * product.quantity;
+        });
+        return total;
+    };
 })
