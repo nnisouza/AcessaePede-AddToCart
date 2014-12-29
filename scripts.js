@@ -1,3 +1,4 @@
+
 angular.module('acessaepedeApp', ['mm.foundation'])
 
 .controller('AcessaepedeCtrl', function ($scope, $http) {
@@ -18,7 +19,8 @@ angular.module('acessaepedeApp', ['mm.foundation'])
         }
     };
     $scope.getCartPrice = function () {
-        var total = 0;
+        var getValue = parseInt($('#deliveryPrice').val());
+        var total = getValue;
         $scope.cart.forEach(function (product) {
             total += product.price * product.quantity;
         });
