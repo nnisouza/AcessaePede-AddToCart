@@ -142,6 +142,9 @@ body{
 .wrapper .sidebarTicket .ticket table td{
     color: #9f2929;
 }
+.wrapper .sidebarTicket .ticket table td>span{
+    font-weight: 600;
+}
 .wrapper .sidebarTicket .ticket td.priceCel{
     width: 40px;
 }
