@@ -1,5 +1,5 @@
 
-angular.module('acessaepedeApp', ['mm.foundation'])
+angular.module('acessaepedeApp', ['mm.foundation', 'ngAnimate'])
 
 .controller('AcessaepedeCtrl', function ($scope, $http) {
     $scope.cart = [];
