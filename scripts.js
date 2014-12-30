@@ -10,8 +10,12 @@ angular.module('acessaepedeApp', ['mm.foundation', 'ngAnimate'])
         var found = false;
         $scope.cart.forEach(function (item) {
             if (item.id === product.id) {
-                item.quantity++;
-                found = true;
+                if (item.quantity < product.stock){
+                    item.quantity++;
+                    found = true;
+                } else {
+                    found = true;
+                }
             }
         });
         if (!found) {
