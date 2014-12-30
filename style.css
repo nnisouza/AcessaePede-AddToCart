@@ -1,0 +1,213 @@
+@import url(http://fonts.googleapis.com/css?family=Alegreya+Sans:100,300,400,500,700,800,900,300italic,100italic,400italic,500italic,700italic,800italic,900italic);
+
+html,
+body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background: url('img/paper_fibers.png');
+    margin: 0;
+    padding: 0;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+.wrapper{
+    width: 960px;
+    margin: 0 auto;
+}
+.wrapper .container:before{
+    display: block;
+    content: '';
+    width: 4px;
+    height: 575px;
+    position: absolute;
+    left: -4px;
+    background: url('img/leftWrapper.png');
+    top: 0;
+}
+.wrapper .container:after{
+    display: block;
+    content: '';
+    width: 4px;
+    height: 575px;
+    position: absolute;
+    right: -4px;
+    background: url('img/rightWrapper.png');
+    top: 0;
+}
+.wrapper .container{
+    width: 720px;
+    float: left;
+    position: relative;
+}
+.wrapper .container .productList{
+    width: 100%;
+}
+.wrapper .container .productList tr{
+    height: 120px;
+}
+.wrapper .container .productList tr:nth-child(even) {
+    background: #eaeaea;
+}
+.wrapper .container .productList tr:nth-child(odd) {
+    background: #f2f2f2;
+}
+.wrapper .container .productList tr td{
+    text-align: center;
+}
+.wrapper .container .productList tr th.kindCel{
+    text-align: left;
+    padding-left: 10px;
+}
+.wrapper .container .productList tr td.kindCel{
+    color: #282828;
+    font-size: 24px;
+    font-weight: 500;
+    padding-left: 10px;
+    line-height: 15px;
+    text-align: left;
+}
+.wrapper .container .productList tr td.kindCel span{
+    font-size: 13px;
+    line-height: 20px;
+    display: block;
+}
+.wrapper .container .productList tr td.priceCel,
+.wrapper .container .productList tr td.stockCel{
+    width: 110px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #282828;
+}
+.wrapper .container .productList tr td.btCel{
+    width: 100px;
+}
+.wrapper .container .productList button{
+    background: url(img/addBT.png) transparent;
+    width: 59px;
+    height: 50px;
+    border: 0 none;
+    color: transparent;
+    cursor: pointer;
+}
+.wrapper .sidebarTicket{
+    float: left;
+    width: 240px;
+}
+.wrapper .sidebarTicket .comanda{
+    background: url('img/comanda.png');
+    width: 235px;
+    height: 15px;
+    margin: 10px auto 0;
+}
+.wrapper .sidebarTicket .ticket{
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(1, 1, 1,0.08);
+    background: url('img/ticketBG.jpg') no-repeat center top rgb(255, 255, 255);
+    box-shadow: 0px 1px 3px 0px rgba(1, 1, 1, 0.078);
+    width: 218px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+    transform: translateY(-5px);
+    border-top: 0 none;
+    box-sizing: border-box;
+    padding-top: 60px;
+    border-radius: 0 0 15px 15px;
+}
+.wrapper .sidebarTicket .ticket table{
+    width: 100%;
+    margin-bottom: 15px;
+}
+.wrapper .sidebarTicket .ticket p{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-left: 10px;
+    color: #9f2929;
+    margin: 5px 0;
+}
+.wrapper .sidebarTicket .ticket hr{
+    width: 198px;
+    margin: 0 auto;
+    background: #9f2929;
+    border: 0 none;
+    height: 1px;
+}
+.wrapper .sidebarTicket .ticket p span{
+    float: right;
+    padding-right: 10px;
+}
+.wrapper .sidebarTicket .ticket table td{
+    color: #9f2929;
+}
+.wrapper .sidebarTicket .ticket td.priceCel{
+    width: 40px;
+}
+.wrapper .sidebarTicket .ticket button{
+    width: 14px;
+    height: 14px;
+    background: #9f2929;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    border: 0 none;
+    border-radius: 50%;
+    opacity: 1;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    outline: 0 none;
+    cursor: pointer;
+}
+.wrapper .sidebarTicket .ticket button:hover{
+    opacity: 0.8;
+}
+.wrapper .sidebarTicket .ticket button span{
+    display: block;
+    width: 8px;
+    height: 2px;
+    background: #fff;
+    margin: 0 auto;
+}
+.wrapper .sidebarTicket h2{
+    margin: 0;
+    padding: 0;
+    font-size: 21px;
+    text-transform: none;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 36px;
+    color: #9f2929;
+}
+.wrapper .sidebarTicket .ticket button#submit{
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 0 0 15px 15px;
+    background: #9f2929;
+    border: 1px solid #fff;
+    height: 50px;
+    color: #fff;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 18px;
+    outline: 0 none;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+.wrapper .sidebarTicket .ticket tr.ng-enter{
+  -webkit-transition:0.5s linear all;
+  transition:0.5s linear all;
+}
+.wrapper .sidebarTicket .ticket tr.ng-enter,
+.wrapper .sidebarTicket .ticket tr.ng-leave{
+    opacity: 0;
+    transform: translateY(10%);
+}
+
+.wrapper .sidebarTicket .ticket tr.ng-enter.ng-enter-active {
+    opacity: 1;
+    transform: translateY(0px);
+}

@@ -2,37 +2,50 @@
 	{
 		"id": 1,
 		"title": "Produto A",
-		"price": 25,
-        "stock": 30
+        "description": "Mussarela, Abacaxi, Figo, Pêssego e Ameixa em Calda.",
+        "stock": 6,
+		"price": 212
 	},
 	{
 		"id": 2,
 		"title": "Produto B",
-		"price": 50,
-        "stock": 10
+        "description": "Mussarela, Abacaxi, Figo, Pêssego e Ameixa em Calda.",
+        "stock": 3,
+		"price": 6
 	},
 	{
 		"id": 3,
 		"title": "Produto C",
-		"price": 13,
-        "stock": 12
+        "description": "Mussarela, Abacaxi, Figo, Pêssego e Ameixa em Calda.",
+        "stock": 1,
+		"price": 25
 	},
 	{
 		"id": 4,
 		"title": "Produto D",
-		"price": 15,
-        "stock": 5
+        "description": "Mussarela, Abacaxi, Figo, Pêssego e Ameixa em Calda.",
+        "stock": 8,
+		"price": 30
 	},
 	{
 		"id": 5,
 		"title": "Produto E",
-		"price": 10,
-        "stock": 4
+        "description": "Mussarela, Abacaxi, Figo, Pêssego e Ameixa em Calda.",
+        "stock": 7,
+		"price": 50
 	},
 	{
 		"id": 6,
 		"title": "Produto F",
-		"price": 20,
-        "stock": 15
+        "description": "Mussarela, Abacaxi, Figo, Pêssego e Ameixa em Calda.",
+        "stock": 18,
+		"price": 38
+	},
+	{
+		"id": 7,
+		"title": "Produto G",
+        "description": "Mussarela, Abacaxi, Figo, Pêssego e Ameixa em Calda.",
+        "stock": 20,
+		"price": 80
 	}
 ]}

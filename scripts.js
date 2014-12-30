@@ -15,6 +15,7 @@ angular.module('acessaepedeApp', ['mm.foundation', 'ngAnimate'])
                     found = true;
                 } else {
                     found = true;
+                    alert('Sem estoque de produto');
                 }
             }
         });
