@@ -34,7 +34,11 @@ angular.module('acessaepedeApp', ['mm.foundation', 'ngAnimate'])
     $scope.removeFromCart = function (product, cart) {
         $scope.cart.forEach(function (item) {
             if (item.id === product.id) {
-                cart.splice(cart.indexOf(item), 1);
+                if (item.quantity > 1){
+                    item.quantity--;
+                } else {
+                    cart.splice(cart.indexOf(item), 1);
+                }
             }
         });
     };
